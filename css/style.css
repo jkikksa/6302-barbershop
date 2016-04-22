@@ -7,10 +7,11 @@ body {
   line-height: 24px;
   color: #ffffff;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   background-color: #131313;
   min-width: 960px;
-  max-width: 2400px;
+  max-width: 2500px;
+  
 }
 
 h1 {
@@ -91,6 +92,11 @@ h2 {
 .index-content {
   background-color: #131313;
   color: white;
+  background-image: url("../img/bg_index-page.jpg");
+  background-repeat: no-repeat;
+  background-position: -3px 0px;
+  padding-top: 60px;
+  text-transform: uppercase;
 }
 .shop-content, .item-content {
   background-color: #f8f5f2;
@@ -98,9 +104,9 @@ h2 {
 }
 .content__inner {
   width: 940px;
-  padding: 40px 10px;
   margin: 0 auto;
   outline: 1px solid red;
+  padding: 0 10px;
 }
 
 .index-logo {
@@ -178,6 +184,11 @@ h2 {
   font-size: 14px;
   line-height: 18px;
 }
+.product-item__product-manufacturer::before {
+  content: '\A';
+	white-space: pre;
+  
+} 
 .product-item:nth-child(3n) {
   margin-right: 0;
 }
